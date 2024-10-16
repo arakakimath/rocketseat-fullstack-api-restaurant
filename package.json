@@ -1,0 +1,18 @@
+{
+  "name": "rocketseat-fullstack-api-restaurant",
+  "version": "1.0.0",
+  "description": "API to manage orders from a restaurant",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Matheus Arakaki",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.7.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
