@@ -8,6 +8,8 @@ const app = express()
 app.use(express.json())
 app.use(routes)
 
-app.use(errorHandling)
+app.use((error:any, request:any, response:any, next:any) => {
+  errorHandling(error, request, response, next) 
+});
 
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`))

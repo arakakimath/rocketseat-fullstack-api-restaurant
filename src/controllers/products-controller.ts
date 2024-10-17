@@ -4,7 +4,7 @@ import { knex } from "@/database/knex";
 import { AppError } from "@/utils/AppError";
 
 class ProductController {
-  index = async (request: Request, response: Response, next: NextFunction) => {
+  async index(request: Request, response: Response, next: NextFunction) {
     try {
       console.log(this)
       const { name } = request.query
@@ -84,7 +84,7 @@ class ProductController {
     }
   }
 
-  #verifyId = async (id) => {
+  #verifyId = async (id: number) => {
     console.log(this)
     const product = await knex<ProductRepository>("products")
       .select()
